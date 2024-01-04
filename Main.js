@@ -41,9 +41,7 @@ function specialRound(number, lastDigits = 1, roundingType = '4/9') {
   if (isNaN(number) || isNaN(lastDigits)) {
     return 'Invalid input';
   }
-  
- 
-  //const rounded = Math.round(number);
+
   
   const multiplier = Math.pow(10, lastDigits);
   const roundedNumber = Math.round(number / multiplier) * multiplier;
